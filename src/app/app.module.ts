@@ -9,6 +9,8 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { CategoryQuestionsComponent } from './components/category-questions/category-questions.component';
 import { QuestionAnswerComponent } from './components/question-answer/question-answer.component';
 import { HeaderComponent } from './header/header.component';
+import { CategoriesService } from './services/categories.service';
+import { CategoriesResolver } from './components/categories/categories.resolver';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { HeaderComponent } from './header/header.component';
     SharedModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    CategoriesService,
+    CategoriesResolver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
