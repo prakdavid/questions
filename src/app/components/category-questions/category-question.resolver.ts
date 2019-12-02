@@ -7,11 +7,11 @@ import { CategoriesService } from 'src/app/services/categories.service';
 @Injectable({
   providedIn: 'root'
 })
-export class CategoriesResolver implements Resolve<any> {
+export class CategoryQuestionResolver implements Resolve {
 
   constructor(private categoriesService: CategoriesService) { }
 
-    resolve(): Observable<Category[]> {
-        return this.categoriesService.getCategories();
+    resolve(): Observable<Category> {
+        // return this.categoriesService.getCategory();
     }
 }

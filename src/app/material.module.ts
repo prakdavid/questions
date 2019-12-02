@@ -5,16 +5,24 @@ import {
   MatCheckboxModule,
   MatToolbarModule,
   MatListModule,
-  MatChipsModule
+  MatChipsModule,
+  MatButtonToggleModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
 
 const MATERIAL = [
+  MatFormFieldModule,
   MatSlideToggleModule,
   MatCheckboxModule,
   MatButtonModule,
   MatToolbarModule,
   MatListModule,
-  MatChipsModule
+  MatChipsModule,
+  MatButtonToggleModule,
+  MatDialogModule,
+  MatInputModule
 ];
 
 @NgModule({

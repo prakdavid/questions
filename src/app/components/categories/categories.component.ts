@@ -18,7 +18,7 @@ export class CategoriesComponent implements OnInit {
     // insert data
     // this.categories = [
     //   new Category("Angular", "Angular description", "https://angular.io/assets/images/logos/angular/angular.svg", "angular", [{ name: "Angular"}]),
-    //   new Category("TypeScript", "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.", "https://s.gravatar.com/avatar/3e2b342616822f8eabc9dd393840db4a?size=496&default=retro", "angular", [{ name: "Javascript"}, { name: 'TypeScript'}])
+    //   new Category("TypeScript", "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.", "https://s.gravatar.com/avatar/3e2b342616822f8eabc9dd393840db4a?size=496&default=retro", "typescript", [{ name: "Javascript"}, { name: 'TypeScript'}])
     // ];
     // console.log(this.categories);
     // this.http.put(this.url, this.categories).subscribe( res => console.log(res) );

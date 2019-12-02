@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Ajouter une question</h1>
+<form [formGroup]="form"  class="form" (ngSubmit)="save(form.value)">
+  <div mat-dialog-content>
+      <mat-form-field>
+        <textarea matInput
+          placeholder="Entrez votre question"
+          formControlName="question"
+          cdkTextareaAutosize
+          #autosize="cdkTextareaAutosize"
+          cdkAutosizeMinRows="1"
+          cdkAutosizeMaxRows="5"></textarea>
+      </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="close()">Fermer</button>
+    <button mat-button cdkFocusInitial type="submit" [disabled]="!form.valid">Sauvegarder</button>
+  </div>
+</form>
